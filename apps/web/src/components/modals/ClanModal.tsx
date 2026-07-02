@@ -81,7 +81,7 @@ export function ClanModal({ onClose }: { onClose: () => void }) {
       ) : clan && settings ? (
         /* ---- SETTINGS (owner) ---- */
         <div className="flex flex-col gap-3">
-          <button onClick={() => setSettings(false)} className="self-start text-xs text-[#b39a68] hover:text-[#e6cf9a]">< Back</button>
+          <button onClick={() => setSettings(false)} className="self-start text-xs text-[#b39a68] hover:text-[#e6cf9a]">&lt; Back</button>
           <div>
             <div className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#e0b45a]">Clan name</div>
             <input value={rename} onChange={(e) => setRename(e.target.value)} maxLength={24} className={fieldCls} />
