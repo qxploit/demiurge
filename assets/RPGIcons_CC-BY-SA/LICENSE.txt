@@ -1,0 +1,5 @@
+LICENSE: CC-BY-SA 4.0 (NOT CC0)
+Source: https://opengameart.org/content/16x16-rpg-icons
+         https://merchant-shade.itch.io/16x16-mixed-rpg-icons
+Attribution required (Shade). Share-alike: derivatives must also be CC-BY-SA 4.0.
+Kept separate from the CC0 packs on purpose.

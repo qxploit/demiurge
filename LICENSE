@@ -1,0 +1,47 @@
+Demiurge Source-Available License (v1)
+Copyright (c) 2026 qxploit and the Demiurge contributors.
+
+Demiurge is source-available. The code is public so anyone can read it, learn
+from it, and contribute back. It is NOT permissive open source — you may not use
+it commercially or spin it off into your own game.
+
+1. GRANT
+   You are granted a worldwide, royalty-free, non-exclusive license to:
+   (a) view and study the source code;
+   (b) fork the repository and modify it for the sole purpose of submitting
+       contributions (pull requests) back to the official Demiurge project;
+   (c) run the software locally for personal, non-commercial evaluation and
+       development.
+
+2. RESTRICTIONS
+   Without prior written permission from the copyright holder, you may NOT:
+   (a) use the software, or any part of it, for commercial purposes or to
+       generate revenue directly or indirectly;
+   (b) distribute, publish, host, or otherwise make available a copy or a
+       modified version as a product or service to third parties;
+   (c) create, publish, or distribute a derivative work, variant, clone, or
+       competing game based on this software in whole or in part;
+   (d) remove or alter this license or any attribution notices.
+
+3. CONTRIBUTIONS
+   By submitting a contribution, you agree it is licensed to the project under
+   this same license, and that the copyright holder may use, modify, and
+   distribute it as part of Demiurge.
+
+4. THIRD-PARTY ASSETS
+   The art under /assets is the work of its creators and is licensed separately
+   under its own terms (CC0 / CC-BY / CC-BY-SA — see assets/README.txt). Those
+   terms govern the assets, not this license, and their attribution
+   requirements must be honored.
+
+5. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A
+   PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+   COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY.
+
+6. TERMINATION
+   Any breach of Section 2 immediately and automatically terminates your rights
+   under this license.
+
+For commercial licensing or other permissions, contact the copyright holder.

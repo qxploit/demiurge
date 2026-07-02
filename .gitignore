@@ -1,0 +1,38 @@
+# deps
+node_modules/
+**/node_modules/
+.pnpm-store/
+
+# turbo / build caches
+.turbo/
+*.tsbuildinfo
+
+# builds
+dist/
+**/dist/
+.next/
+**/.next/
+out/
+build/
+
+# env
+.env
+.env.local
+.env.*.local
+**/.env
+
+# runtime state (file stores, tunnels, logs)
+apps/api/data/
+data/
+cloudflared.txt
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# tooling / os
+coverage/
+.playwright-mcp/
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
