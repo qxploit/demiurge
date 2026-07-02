@@ -7,7 +7,7 @@ server-authoritative and deterministic.
 > **On "3D":** the packs are 2D pixel art - they can't become real 3D models.
 > What we CAN do (next visual pass) is a **2.5D depth look**: y-sorted sprites,
 > drop shadows, elevation via cliff tiles, and tall building sprites drawn with
-> a height offset. That reads like a polished Pokémon/Zelda overworld.
+> a height offset. That reads like a polished Pokemon/Zelda overworld.
 
 ## Terrain - `Ground/`, `PunyWorld`, `MiniWorldPlus/terrain`
 Biomes drive **walkability + movement**: deep water/water = impassable (need a
@@ -15,8 +15,8 @@ boat or bridge), sand/grass/forest = walkable, mountain = slow. Cliffs give
 elevation (2.5D layering).
 
 ## Nature - `Nature/` (Trees, PineTrees, Rocks, Cactus, Wheatfield, Tumbleweed)
-**Resource nodes.** Trees → Wood, Rocks → Stone/Ore/Gold, Wheatfield/berries →
-Food, Cactus/crystal → rare. Workers harvest them; nodes deplete and regrow.
+**Resource nodes.** Trees -> Wood, Rocks -> Stone/Ore/Gold, Wheatfield/berries ->
+Food, Cactus/crystal -> rare. Workers harvest them; nodes deplete and regrow.
 
 ## Buildings - `Buildings/<ClanColor>/` (one colour per clan)
 Clan **village** structures, each with a function:
@@ -24,17 +24,17 @@ Clan **village** structures, each with a function:
 - **House / Hut** - population cap (more villagers).
 - **Barracks** - trains **Soldiers** (melee/archer/mage).
 - **Tower / Wall** - **defense** (towers auto-shoot intruders).
-- **Market** - trade resources ↔ gold. **Tavern** - recruit heroes.
+- **Market** - trade resources <-> gold. **Tavern** - recruit heroes.
 - **Docks** - build **boats/ships**. **Workshop** - upgrades. **Chapel** - buffs.
 
-## Heroes - `Characters/Champions/` (Arthax, Grum, Zhinja…)
+## Heroes - `Characters/Champions/` (Arthax, Grum, Zhinja...)
 Playable **player avatars** (the MMO layer). Each champion = a class/skin. Damage
-scales with the **equipped sword** (see Weapons). ✅ combat + equip live.
+scales with the **equipped sword** (see Weapons). combat + equip live.
 
 ## Workers - `Characters/Workers/` (Farmer)
 **Villager units**: gather resources, construct buildings, repair. Non-combat.
 
-## Soldiers - `Characters/Soldiers/Melee|Ranged/<ClanColor>/` (Swordsman, Archer…)
+## Soldiers - `Characters/Soldiers/Melee|Ranged/<ClanColor>/` (Swordsman, Archer...)
 **RTS combat units**, trained at Barracks, owned by a clan:
 - **Swordsman** - melee frontline. **Archer** - ranged. **Mage** - AoE/caster.
 - Follow move/attack orders, auto-retaliate, defend territory, siege enemy villages.
@@ -50,11 +50,11 @@ Each species has distinct AI (aggro + **leash to home** already live):
 - **Troll** - mini-boss; guards mountains + high-tier chests.
 
 ## Chests - `Objects`, `MiniWorldPlus/chests`
-**Treasure.** Walk up + open → loot (coins + weapons/items by rarity). Better
-loot in dangerous biomes. ✅ generation + loot table live.
+**Treasure.** Walk up + open -> loot (coins + weapons/items by rarity). Better
+loot in dangerous biomes. generation + loot table live.
 
-## Weapons - `Objects/` swords + gear system  ✅ LIVE
-Swords are **tiers with power** (Rusty → Iron → Steel → Ember → Frost →
+## Weapons - `Objects/` swords + gear system  LIVE
+Swords are **tiers with power** (Rusty -> Iron -> Steel -> Ember -> Frost ->
 Demiurge Blade). Buy in the Bag, **equip** (the sword becomes your **cursor**),
 **enchant** (+15% power/level, up to +5). Equipped power = hero damage.
 
@@ -76,9 +76,9 @@ effects for world decoration.
 
 ---
 ### Build order from here
-1. **Interaction**: harvest nodes, open chests → bag, attack tuning. (combat ✅)
-2. **Villages**: place Keep → claim zone → build houses/walls/towers (clan colour).
+1. **Interaction**: harvest nodes, open chests -> bag, attack tuning. (combat )
+2. **Villages**: place Keep -> claim zone -> build houses/walls/towers (clan colour).
 3. **Units**: Barracks trains Soldiers/Workers; move/attack commands.
 4. **2.5D visual pass**: y-sort, shadows, cliffs, tall buildings; PunyWorld autotiles.
-5. **Water**: Docks → boats, bridges, naval combat, PirateShip raids.
+5. **Water**: Docks -> boats, bridges, naval combat, PirateShip raids.
 6. **Mounts, markets, matchmaking battles, weekly reset rewards.**

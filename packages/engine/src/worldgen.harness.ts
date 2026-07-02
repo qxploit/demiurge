@@ -50,4 +50,4 @@ console.log("");
 console.log(`populated sim: ${before} entities -> ${world.count} after 100 ticks (monsters fighting/dying live)`);
 
 if (fingerprint(w1a) !== fingerprint(w1b) || fingerprint(w1a) === fingerprint(w2)) process.exit(1);
-console.log("\nworld generation: deterministic weekly global maps ✓");
+console.log("\nworld generation: deterministic weekly global maps OK");

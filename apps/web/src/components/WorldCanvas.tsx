@@ -42,7 +42,7 @@ const MON: Record<number, string> = {
   2: `${A}/MiniWorldSprites/Characters/Champions/Zhinja.png`, // Slime (stand-in)
   3: `${A}/MiniWorldSprites/Characters/Champions/Katan.png`, // Skeleton
   4: `${A}/MiniWorldSprites/Characters/Champions/Gangblanc.png`, // Bandit
-  5: `${A}/MiniWorldSprites/Characters/Champions/Börg.png`, // Orc
+  5: `${A}/MiniWorldSprites/Characters/Champions/Borg.png`, // Orc
   6: `${A}/MiniWorldSprites/Characters/Champions/Kanji.png`, // Troll
 };
 const RES: Record<number, string> = {

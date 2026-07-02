@@ -45,7 +45,7 @@ export function BagModal({ onClose, onEquip }: { onClose: () => void; onEquip?: 
       <div className="mb-3 flex items-center justify-between gap-3">
         <span className="text-xs text-[#b39a68]">Equip a sword - it becomes your cursor. Enchant it for more power.</span>
         <span className="flex items-center gap-2 rounded-full border border-[#b58a3c]/60 bg-black/40 px-3 py-1 text-sm font-bold">
-          <Coin /> {gear?.gold ?? "…"}
+          <Coin /> {gear?.gold ?? "..."}
         </span>
       </div>
       {err && <div className="mb-2 text-xs text-[#e88a6a]">{err}</div>}
@@ -65,7 +65,7 @@ export function BagModal({ onClose, onEquip }: { onClose: () => void; onEquip?: 
                   {equipped && <span className="rounded bg-[#e6b957]/25 px-1.5 py-0.5 text-[9px] font-bold uppercase text-[#e6b957]">Equipped</span>}
                 </div>
                 <div className="text-[11px] text-[#b39a68]">
-                  Tier {w.tier} · <span className="font-bold text-[#e6cf9a]">{w.effectivePower} PWR</span>
+                  Tier {w.tier} - <span className="font-bold text-[#e6cf9a]">{w.effectivePower} PWR</span>
                 </div>
               </div>
               <div className="ml-auto flex items-center gap-1.5">

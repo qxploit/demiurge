@@ -1,13 +1,13 @@
 <div align="center">
 
-# ⚔️ Demiurge
+# Demiurge
 
 **A 2D open-world MMORPG / RTS hybrid.**
 One global map regenerates every week. Clans found villages, claim territory,
 gather, build defenses, and go to war - while a deterministic, server-authoritative
 world ticks beneath it all.
 
-*Source-available · contributors welcome · not for commercial use or clones*
+*Source-available - contributors welcome - not for commercial use or clones*
 
 </div>
 
@@ -20,16 +20,16 @@ Demiurge is a persistent 2D world you play in the browser. You're both a **hero*
 claim land with your clan). The entire world lives on the server - the client is
 a thin renderer, so there's no game logic to cheat.
 
-- 🌍 **Weekly global world** - every player shares one map, regenerated each ISO
+- **Weekly global world** - every player shares one map, regenerated each ISO
   week from a deterministic seed (biomes, rivers, mountains, resources, monster
   camps, chests, settlement sites).
-- 🧭 **Live open world** - walk a continent rendered from pixel-art sprites,
+- **Live open world** - walk a continent rendered from pixel-art sprites,
   camera-follow, click-to-move, water collision.
-- ⚔️ **Combat** - attack monsters, auto-retaliate, monster leashing; damage
+- **Combat** - attack monsters, auto-retaliate, monster leashing; damage
   scales with your equipped sword.
-- 🗡️ **Weapons & gear** - swords in power tiers; buy, equip (**the sword becomes
+- **Weapons & gear** - swords in power tiers; buy, equip (**the sword becomes
   your cursor**), and enchant them.
-- 👥 **Social** - global encrypted chat, party (up to 4), friends + block,
+- **Social** - global encrypted chat, party (up to 4), friends + block,
   player profile cards, clans (browse / request-to-join / Discord / settings),
   shop, VIP, leveling + prestige.
 
@@ -39,7 +39,7 @@ bridges, etc.).
 
 ## Tech
 
-Turborepo · pnpm workspaces
+Turborepo - pnpm workspaces
 
 | Package | What |
 |---|---|
@@ -48,7 +48,7 @@ Turborepo · pnpm workspaces
 | `apps/web` | **Next 16** + React 19 + Tailwind v4 - lobby HUD + `<canvas>` world renderer. |
 | infra | **Postgres 16** + **Redis 7** via Docker (env-gated in the backend). |
 
-Server-authoritative + deterministic: same seed + same inputs → byte-identical
+Server-authoritative + deterministic: same seed + same inputs -> byte-identical
 world, so the server is the single source of truth and everything is replayable.
 
 ## Getting started
@@ -66,7 +66,7 @@ Postgres/Redis are optional in dev (the backend falls back to file stores).
 To run the full stack with databases:
 
 ```bash
-docker compose up --build                 # web :3000 · api :3001 · pg :5433 · redis :6380
+docker compose up --build                 # web :3000 - api :3001 - pg :5433 - redis :6380
 ```
 
 Prove the engine is deterministic:
@@ -85,7 +85,7 @@ apps/
 packages/
   engine/     deterministic sim + world generation
 assets/       pixel-art packs (see assets/README.txt for licenses)
-docker-compose.yml · Dockerfile
+docker-compose.yml - Dockerfile
 ```
 
 ## Contributing

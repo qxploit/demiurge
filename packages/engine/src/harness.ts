@@ -46,4 +46,4 @@ console.log("determinism  A === B (same seed):", a.hash === b.hash ? "PASS" : "F
 console.log("divergence   A !== C (diff seed):", a.hash !== c.hash ? "PASS" : "FAIL");
 
 if (a.hash !== b.hash || a.hash === c.hash) process.exit(1);
-console.log("\nengine core: deterministic ✓");
+console.log("\nengine core: deterministic OK");

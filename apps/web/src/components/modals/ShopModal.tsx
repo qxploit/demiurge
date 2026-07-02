@@ -39,7 +39,7 @@ export function ShopModal({ onClose }: { onClose: () => void }) {
       <div className="mb-3 flex items-center justify-between">
         <span className="text-sm text-[#b39a68]">The Bazaar</span>
         <span className="flex items-center gap-2 rounded-full border border-[#b58a3c]/60 bg-black/40 px-3 py-1 text-sm font-bold">
-          <Coin /> {state?.gold ?? "…"}
+          <Coin /> {state?.gold ?? "..."}
         </span>
       </div>
       {err && <div className="mb-2 text-xs text-[#e88a6a]">{err}</div>}

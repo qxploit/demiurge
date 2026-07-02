@@ -34,7 +34,7 @@ export default function WorldPage() {
   const entsRef = useRef<Snap[]>([]);
   const youRef = useRef<number>(0);
   const camRef = useRef({ x: 0, y: 0 });
-  const [status, setStatus] = useState("connecting…");
+  const [status, setStatus] = useState("connecting...");
   const [hud, setHud] = useState<{ week: number; online: number } | null>(null);
   const [coords, setCoords] = useState({ x: 0, y: 0 });
 
@@ -49,7 +49,7 @@ export default function WorldPage() {
       }
       const sock = connectGame();
       sockRef.current = sock;
-      sock.on("connect", () => setStatus("authenticating…"));
+      sock.on("connect", () => setStatus("authenticating..."));
       sock.on("welcome", (d: { size: number; tileSize: number; biome: string; season: { week: number }; online: number; you: { heroId: number; x: number; y: number } }) => {
         const bin = atob(d.biome);
         const arr = new Uint8Array(bin.length);
@@ -65,7 +65,7 @@ export default function WorldPage() {
         entsRef.current = d.ents;
       });
       sock.on("kick", () => setStatus("kicked - refresh"));
-      sock.on("disconnect", () => setStatus("disconnected…"));
+      sock.on("disconnect", () => setStatus("disconnected..."));
     });
 
     const loop = () => {
@@ -210,12 +210,12 @@ export default function WorldPage() {
 
       {/* HUD */}
       <div className="pointer-events-none absolute left-3 top-3 rounded-md border-2 border-[#b58a3c]/80 bg-gradient-to-b from-[#241a0e]/94 to-[#130c06]/94 px-3 py-2 text-xs shadow-lg">
-        <div className="font-black uppercase tracking-widest text-[#e6b957]">Demiurge · Open World</div>
+        <div className="font-black uppercase tracking-widest text-[#e6b957]">Demiurge - Open World</div>
         <div className="mt-1 text-[#b39a68]">
-          {hud ? `Season - Week ${hud.week} · ${hud.online} online` : "loading…"}
+          {hud ? `Season - Week ${hud.week} - ${hud.online} online` : "loading..."}
         </div>
         <div className="text-[#7a6640]">
-          x {coords.x} · y {coords.y}
+          x {coords.x} - y {coords.y}
         </div>
       </div>
 
@@ -233,7 +233,7 @@ export default function WorldPage() {
       </button>
 
       <div className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 rounded-md border border-[#b58a3c]/50 bg-black/50 px-4 py-1.5 text-xs text-[#b39a68]">
-        click anywhere to walk · red = monsters · gold = chests · squares = resources
+        click anywhere to walk - red = monsters - gold = chests - squares = resources
       </div>
     </main>
   );

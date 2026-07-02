@@ -86,8 +86,8 @@ export function FriendsModal({
                       {f.vip && <VipDiamond size={12} />}
                     </div>
                     <div className="text-[11px] capitalize text-[#b39a68]">
-                      {f.status} · Lv {f.level}
-                      {f.prestige ? ` · P${f.prestige}` : ""}
+                      {f.status} - Lv {f.level}
+                      {f.prestige ? ` - P${f.prestige}` : ""}
                     </div>
                   </div>
                   <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#8a734a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={`ml-auto transition ${open ? "rotate-90" : ""}`}>

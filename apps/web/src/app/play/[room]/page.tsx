@@ -445,13 +445,13 @@ export default function Room() {
       {/* ===== MINIMAP (top-right) ===== */}
       <Frame className="absolute right-3 top-[4.75rem] z-10 w-48 p-2">
         <div className="mb-1 flex items-center justify-between px-0.5 text-[10px] font-semibold uppercase tracking-wider text-[#e0b45a]">
-          <span>World{worldMeta ? ` · W${worldMeta.week}` : ""}</span>
-          <span className="text-[#b39a68]">{worldMeta ? `${worldMeta.online}▲` : "…"}</span>
+          <span>World{worldMeta ? ` - W${worldMeta.week}` : ""}</span>
+          <span className="text-[#b39a68]">{worldMeta ? `${worldMeta.online}` : "..."}</span>
         </div>
         <div className="relative aspect-square w-full overflow-hidden rounded bg-[#0e0a05] ring-1 ring-[#b58a3c]/40">
           <MiniMap meta={worldMeta} hero={heroPos} />
         </div>
-        <div className="mt-1 px-0.5 text-[9px] text-[#7a6640]">{heroPos ? `x ${heroPos.x} · y ${heroPos.y}` : "entering world…"}</div>
+        <div className="mt-1 px-0.5 text-[9px] text-[#7a6640]">{heroPos ? `x ${heroPos.x} - y ${heroPos.y}` : "entering world..."}</div>
       </Frame>
 
       {/* ===== AD BANNER (bottom-right, fills the gap right of the command bar) ===== */}

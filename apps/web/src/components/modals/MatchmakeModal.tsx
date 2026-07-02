@@ -30,7 +30,7 @@ export function MatchmakeModal({ onClose }: { onClose: () => void }) {
         <div className="flex flex-col items-center gap-4 py-6">
           <div className="text-lg font-black text-[#e6b957]">{mode === "1v1" ? "1 vs 1" : "Clan vs Clan"}</div>
           <div className="h-10 w-10 animate-spin rounded-full border-4 border-[#b58a3c]/30 border-t-[#e6b957]" />
-          <div className="text-sm text-[#b39a68]">Searching for opponents…</div>
+          <div className="text-sm text-[#b39a68]">Searching for opponents...</div>
           <button
             onClick={() => setMode(null)}
             className="rounded-md border border-[#c0503c]/70 px-4 py-2 text-sm font-semibold text-[#e88a6a] transition hover:bg-[#c0392b]/25"

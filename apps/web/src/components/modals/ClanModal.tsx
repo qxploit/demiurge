@@ -81,7 +81,7 @@ export function ClanModal({ onClose }: { onClose: () => void }) {
       ) : clan && settings ? (
         /* ---- SETTINGS (owner) ---- */
         <div className="flex flex-col gap-3">
-          <button onClick={() => setSettings(false)} className="self-start text-xs text-[#b39a68] hover:text-[#e6cf9a]">‹ Back</button>
+          <button onClick={() => setSettings(false)} className="self-start text-xs text-[#b39a68] hover:text-[#e6cf9a]">< Back</button>
           <div>
             <div className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#e0b45a]">Clan name</div>
             <input value={rename} onChange={(e) => setRename(e.target.value)} maxLength={24} className={fieldCls} />
@@ -102,7 +102,7 @@ export function ClanModal({ onClose }: { onClose: () => void }) {
             <div>
               <div className="text-lg font-black text-[#e6b957]">{clan.name}</div>
               <div className="text-xs text-[#b39a68]">
-                [{clan.tag}] · {clan.members.length} members
+                [{clan.tag}] - {clan.members.length} members
               </div>
             </div>
             <div className="flex items-center gap-2">
@@ -196,7 +196,7 @@ export function ClanModal({ onClose }: { onClose: () => void }) {
                     <div className="grid h-9 w-9 shrink-0 place-items-center rounded-md bg-[#b58a3c]/20 text-xs font-black text-[#e6b957]">{c.tag.slice(0, 3)}</div>
                     <div className="min-w-0">
                       <div className="truncate text-sm font-bold">{c.name}</div>
-                      <div className="text-[11px] text-[#b39a68]">[{c.tag}] · {c.members} members</div>
+                      <div className="text-[11px] text-[#b39a68]">[{c.tag}] - {c.members} members</div>
                     </div>
                     <div className="ml-auto flex items-center gap-1.5">
                       {c.discord && (
