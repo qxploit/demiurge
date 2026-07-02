@@ -81,7 +81,7 @@ export function PlayerCard({
           </div>
 
           <div className="mt-4 grid grid-cols-3 gap-2">
-            {([["Matches", "—"], ["Wins", "—"], ["Win %", "—"]] as const).map(([k, v]) => (
+            {([["Matches", "-"], ["Wins", "-"], ["Win %", "-"]] as const).map(([k, v]) => (
               <div key={k} className="rounded-md border border-[#b58a3c]/30 bg-black/25 p-2 text-center">
                 <div className="text-lg font-black text-[#e6cf9a]">{v}</div>
                 <div className="text-[10px] uppercase tracking-wider text-[#8a734a]">{k}</div>

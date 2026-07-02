@@ -51,7 +51,7 @@ export interface GeneratedWorld {
 }
 
 // The world resets weekly: every player shares one global map derived from the
-// ISO year + week. Date is read on the server and passed in — the engine never
+// ISO year + week. Date is read on the server and passed in - the engine never
 // touches the clock, so generation stays pure/deterministic.
 export function weekSeed(year: number, week: number): number {
   let h = 0x811c9dc5;
@@ -162,7 +162,7 @@ export function generateWorld(cfg: WorldGenConfig): GeneratedWorld {
           break;
       }
 
-      // monster camps — rarer, spawn a cluster
+      // monster camps - rarer, spawn a cluster
       if (b === Biome.Forest && rng.chance(0.004)) {
         camps.push({ species: rng.chance(0.5) ? MonsterSpecies.Goblin : MonsterSpecies.Wolf, tx, ty, count: 4 + rng.int(0, 5) });
       } else if (b === Biome.Savanna && rng.chance(0.003)) {
@@ -175,7 +175,7 @@ export function generateWorld(cfg: WorldGenConfig): GeneratedWorld {
         camps.push({ species: MonsterSpecies.Slime, tx, ty, count: 3 + rng.int(0, 3) });
       }
 
-      // treasure chests — rarer in safe lands, better loot in dangerous biomes
+      // treasure chests - rarer in safe lands, better loot in dangerous biomes
       const dangerous = b === Biome.Mountain || b === Biome.Desert || b === Biome.Forest;
       if (b !== Biome.DeepWater && b !== Biome.Water && rng.chance(dangerous ? 0.0016 : 0.0006)) {
         const roll = rng.float();

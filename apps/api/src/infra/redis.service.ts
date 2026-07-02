@@ -11,7 +11,7 @@ export class RedisService implements OnModuleInit, OnModuleDestroy {
   onModuleInit(): void {
     const url = process.env.REDIS_URL;
     if (!url) {
-      this.log.log('REDIS_URL not set — Redis disabled');
+      this.log.log('REDIS_URL not set - Redis disabled');
       return;
     }
     this.client = new Redis(url, {

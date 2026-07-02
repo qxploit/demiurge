@@ -1,5 +1,5 @@
 // The single source of truth binding every art pack to a gameplay role. Paths
-// are relative to the repo `assets/` folder. Nothing in here is decorative —
+// are relative to the repo `assets/` folder. Nothing in here is decorative -
 // each pack has a job, so "use every asset" is enforced by design. The client
 // renderer resolves these keys to concrete sprites/atlas frames.
 
@@ -22,7 +22,7 @@ export const PACKS = {
   plus: "MiniWorldPlus", // indoor + rainbow-refresh extensions
 } as const;
 
-// Each clan colour maps 1:1 to a MiniWorldSprites building set — a clan's whole
+// Each clan colour maps 1:1 to a MiniWorldSprites building set - a clan's whole
 // village (town center, houses, walls, towers...) is drawn in its colour.
 export const CLAN_BUILDING_SET: Record<ClanColor, string> = {
   [ClanColor.Cyan]: "MiniWorldSprites/Buildings/Cyan",

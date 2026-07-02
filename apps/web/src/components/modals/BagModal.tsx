@@ -43,7 +43,7 @@ export function BagModal({ onClose, onEquip }: { onClose: () => void; onEquip?: 
   return (
     <Modal title="Bag & Arsenal" onClose={onClose} width="w-[34rem]">
       <div className="mb-3 flex items-center justify-between gap-3">
-        <span className="text-xs text-[#b39a68]">Equip a sword — it becomes your cursor. Enchant it for more power.</span>
+        <span className="text-xs text-[#b39a68]">Equip a sword - it becomes your cursor. Enchant it for more power.</span>
         <span className="flex items-center gap-2 rounded-full border border-[#b58a3c]/60 bg-black/40 px-3 py-1 text-sm font-bold">
           <Coin /> {gear?.gold ?? "…"}
         </span>

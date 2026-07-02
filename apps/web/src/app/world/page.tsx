@@ -64,7 +64,7 @@ export default function WorldPage() {
         youRef.current = d.hero;
         entsRef.current = d.ents;
       });
-      sock.on("kick", () => setStatus("kicked — refresh"));
+      sock.on("kick", () => setStatus("kicked - refresh"));
       sock.on("disconnect", () => setStatus("disconnected…"));
     });
 
@@ -212,7 +212,7 @@ export default function WorldPage() {
       <div className="pointer-events-none absolute left-3 top-3 rounded-md border-2 border-[#b58a3c]/80 bg-gradient-to-b from-[#241a0e]/94 to-[#130c06]/94 px-3 py-2 text-xs shadow-lg">
         <div className="font-black uppercase tracking-widest text-[#e6b957]">Demiurge · Open World</div>
         <div className="mt-1 text-[#b39a68]">
-          {hud ? `Season — Week ${hud.week} · ${hud.online} online` : "loading…"}
+          {hud ? `Season - Week ${hud.week} · ${hud.online} online` : "loading…"}
         </div>
         <div className="text-[#7a6640]">
           x {coords.x} · y {coords.y}

@@ -4,7 +4,7 @@
 
 **A 2D open-world MMORPG / RTS hybrid.**
 One global map regenerates every week. Clans found villages, claim territory,
-gather, build defenses, and go to war — while a deterministic, server-authoritative
+gather, build defenses, and go to war - while a deterministic, server-authoritative
 world ticks beneath it all.
 
 *Source-available · contributors welcome · not for commercial use or clones*
@@ -17,23 +17,23 @@ world ticks beneath it all.
 
 Demiurge is a persistent 2D world you play in the browser. You're both a **hero**
 (walk the map, fight, loot) and a **commander** (build a village, train units,
-claim land with your clan). The entire world lives on the server — the client is
+claim land with your clan). The entire world lives on the server - the client is
 a thin renderer, so there's no game logic to cheat.
 
-- 🌍 **Weekly global world** — every player shares one map, regenerated each ISO
+- 🌍 **Weekly global world** - every player shares one map, regenerated each ISO
   week from a deterministic seed (biomes, rivers, mountains, resources, monster
   camps, chests, settlement sites).
-- 🧭 **Live open world** — walk a continent rendered from pixel-art sprites,
+- 🧭 **Live open world** - walk a continent rendered from pixel-art sprites,
   camera-follow, click-to-move, water collision.
-- ⚔️ **Combat** — attack monsters, auto-retaliate, monster leashing; damage
+- ⚔️ **Combat** - attack monsters, auto-retaliate, monster leashing; damage
   scales with your equipped sword.
-- 🗡️ **Weapons & gear** — swords in power tiers; buy, equip (**the sword becomes
+- 🗡️ **Weapons & gear** - swords in power tiers; buy, equip (**the sword becomes
   your cursor**), and enchant them.
-- 👥 **Social** — global encrypted chat, party (up to 4), friends + block,
+- 👥 **Social** - global encrypted chat, party (up to 4), friends + block,
   player profile cards, clans (browse / request-to-join / Discord / settings),
   shop, VIP, leveling + prestige.
 
-See **[`GAME_LOGIC.md`](./GAME_LOGIC.md)** for the full design — every asset's
+See **[`GAME_LOGIC.md`](./GAME_LOGIC.md)** for the full design - every asset's
 role and behavior (goblins raid, soldiers defend, boats sail, rivers need
 bridges, etc.).
 
@@ -43,9 +43,9 @@ Turborepo · pnpm workspaces
 
 | Package | What |
 |---|---|
-| `packages/engine` (`@demiurge/engine`) | Framework-agnostic **deterministic sim** — ECS, fixed-timestep tick, seeded RNG, spatial hash, area-of-interest snapshots, world generation. |
-| `apps/api` | **NestJS 11** — REST (auth/chat/friends/clans/shop/gear) + **socket.io** game gateway running the world at 20 Hz. |
-| `apps/web` | **Next 16** + React 19 + Tailwind v4 — lobby HUD + `<canvas>` world renderer. |
+| `packages/engine` (`@demiurge/engine`) | Framework-agnostic **deterministic sim** - ECS, fixed-timestep tick, seeded RNG, spatial hash, area-of-interest snapshots, world generation. |
+| `apps/api` | **NestJS 11** - REST (auth/chat/friends/clans/shop/gear) + **socket.io** game gateway running the world at 20 Hz. |
+| `apps/web` | **Next 16** + React 19 + Tailwind v4 - lobby HUD + `<canvas>` world renderer. |
 | infra | **Postgres 16** + **Redis 7** via Docker (env-gated in the backend). |
 
 Server-authoritative + deterministic: same seed + same inputs → byte-identical
@@ -90,12 +90,12 @@ docker-compose.yml · Dockerfile
 
 ## Contributing
 
-Contributions are welcome — fork, branch, and open a PR. By contributing you
+Contributions are welcome - fork, branch, and open a PR. By contributing you
 agree your work is licensed to the project under the repo license.
 
 ## License
 
 Source-available under the **[Demiurge Source-Available License](./LICENSE)**:
-read it, learn from it, contribute back — but **no commercial use and no
+read it, learn from it, contribute back - but **no commercial use and no
 clones/variants**. Art under `/assets` keeps its own CC0 / CC-BY / CC-BY-SA
 licenses.

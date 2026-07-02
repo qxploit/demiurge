@@ -2,7 +2,7 @@ export type EntityId = number;
 
 // The world is a single continuous 2D space. Everything alive in it is an
 // Entity with a Kind and an optional set of components. This is deliberately an
-// "archetype object" ECS (component-per-field) — simple, cache-friendly enough
+// "archetype object" ECS (component-per-field) - simple, cache-friendly enough
 // for tens of thousands of entities, and trivially deterministic to iterate.
 export enum Kind {
   Hero = 0, // the player's avatar (MMO layer)

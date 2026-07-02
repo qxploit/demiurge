@@ -2,7 +2,7 @@ Demiurge Source-Available License (v1)
 Copyright (c) 2026 qxploit and the Demiurge contributors.
 
 Demiurge is source-available. The code is public so anyone can read it, learn
-from it, and contribute back. It is NOT permissive open source — you may not use
+from it, and contribute back. It is NOT permissive open source - you may not use
 it commercially or spin it off into your own game.
 
 1. GRANT
@@ -30,7 +30,7 @@ it commercially or spin it off into your own game.
 
 4. THIRD-PARTY ASSETS
    The art under /assets is the work of its creators and is licensed separately
-   under its own terms (CC0 / CC-BY / CC-BY-SA — see assets/README.txt). Those
+   under its own terms (CC0 / CC-BY / CC-BY-SA - see assets/README.txt). Those
    terms govern the assets, not this license, and their attribution
    requirements must be honored.
 

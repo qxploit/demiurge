@@ -13,8 +13,8 @@ const AGGRO_RADIUS = 140;
 const LEASH_RADIUS = 280; // mobs give up and go home past this from their spawn
 
 // The World is the whole simulation: a bag of entities advanced by a fixed
-// timestep. `step()` is pure with respect to (state, queued commands, rng) —
-// no wall-clock, no Math.random — so the same inputs always produce the same
+// timestep. `step()` is pure with respect to (state, queued commands, rng) -
+// no wall-clock, no Math.random - so the same inputs always produce the same
 // output. That is what lets the server run it authoritatively and clients (or a
 // replay) reproduce it exactly.
 export class World {
@@ -103,7 +103,7 @@ export class World {
     }
   }
 
-  // stable iteration order — every system walks entities lowest-id-first so the
+  // stable iteration order - every system walks entities lowest-id-first so the
   // outcome never depends on Map internals.
   private order(): EntityId[] {
     return [...this.entities.keys()].sort((a, b) => a - b);
@@ -170,7 +170,7 @@ export class World {
       }
       if (best) e.combat.targetId = best;
       else if (e.home && e.movement) {
-        // no prey nearby — wander back home
+        // no prey nearby - wander back home
         const dh = dist(t.x, t.y, e.home.x, e.home.y);
         if (dh > 8) {
           e.movement.tx = e.home.x;
@@ -300,7 +300,7 @@ export class World {
     return out;
   }
 
-  /** stable fingerprint of the entire world — used to prove determinism */
+  /** stable fingerprint of the entire world - used to prove determinism */
   hashState(): string {
     let h = 0x811c9dc5;
     const order = this.order();

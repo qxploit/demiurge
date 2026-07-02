@@ -11,7 +11,7 @@ export class PgService implements OnModuleInit, OnModuleDestroy {
   onModuleInit(): void {
     const url = process.env.DATABASE_URL;
     if (!url) {
-      this.log.log('DATABASE_URL not set — Postgres disabled');
+      this.log.log('DATABASE_URL not set - Postgres disabled');
       return;
     }
     this.pool = new Pool({ connectionString: url });

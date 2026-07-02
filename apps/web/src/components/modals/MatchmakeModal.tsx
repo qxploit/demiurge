@@ -10,7 +10,7 @@ export function MatchmakeModal({ onClose }: { onClose: () => void }) {
     <Modal title="Find Match" onClose={onClose} width="w-[28rem]">
       {!mode ? (
         <div className="flex flex-col gap-3">
-          <div className="text-sm text-[#b39a68]">Pick a mode — matchmaking pairs you into an instanced battle.</div>
+          <div className="text-sm text-[#b39a68]">Pick a mode - matchmaking pairs you into an instanced battle.</div>
           <button
             onClick={() => setMode("1v1")}
             className="rounded-md border-2 border-[#b58a3c] bg-gradient-to-b from-[#2a1e10] to-[#160e07] p-4 text-left transition hover:border-[#e6b957]"
